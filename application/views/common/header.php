@@ -46,7 +46,7 @@
                                    <a class ="nav-link" href="<?php echo base_url() ; ?>">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url() . "welcome/obot" ; ?>">about</a>
+                                    <a class="nav-link" href="<?php echo base_url() . "index.php/About"; ?>">about</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="services.html">Login</a>

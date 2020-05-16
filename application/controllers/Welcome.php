@@ -24,11 +24,4 @@ class Welcome extends CI_Controller {
 		$this->load->view('common/content');
 		$this->load->view('common/footer');
 	}
-
-	public function obot()
-	{
-		$this->load->view('common/header');
-		//$this->load->view('common/content');
-		$this->load->view('common/footer');
-	}
 }
