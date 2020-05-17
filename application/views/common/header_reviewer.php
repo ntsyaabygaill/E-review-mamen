@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>E-review</title>
-	<link href="<?php echo base_url('img/favicon.png') ?>" rel="icon">
+	<link href="<?php echo base_url('img/ikonn.jpg') ?>" rel="icon">
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo base_url('css/bootstrap.min.css') ?>" rel="stylesheet">
 	<!-- animate CSS -->
@@ -33,7 +33,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                    <a class="navbar-brand" href="<?= base_url(); ?>"> <img src="img/logo4.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
