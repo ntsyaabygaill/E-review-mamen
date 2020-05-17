@@ -33,7 +33,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="<?= base_url(); ?>"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="<?= base_url(); ?>"> <img src="img/logo2.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +46,13 @@
                                    <a class ="nav-link" href="<?php echo base_url() ; ?>">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url() . "index.php/About"; ?>">about</a>
+                                    <a class="nav-link" href="<?php echo base_url() . "About"; ?>">about</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="services.html">Login</a>
+                                    <a class="nav-link" href="<?php echo base_url() . "AccountCtl/login"; ?>">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Signup</a>
+                                    <a class="nav-link" href="<?php echo base_url() . "AccountCtl/signUp"; ?>">Signup</a>
                                 </li>
                             </ul>
                         </div>
