@@ -49,25 +49,25 @@
                         <li class="nav-item dropdown <?php if($segment=="addtask" || $segment=="viewtask" || $segment =="selectpotentialreviewer"){echo "active";}?>">
                         <a class ="nav-link" href="#">Task</a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url() . 'editorctl/addtask'; ?>">Add Task</a></li>
-                            <li><a href="<?php echo base_url() . 'editorctl/viewtask'; ?>">View Task</a></li>
-                            <li><a href="<?php echo base_url() . 'editorctl/selectpotentialreviewer'; ?>">Select Reviewer</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'editorctl/addtask'; ?>">Add Task</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'editorctl/viewtask'; ?>">View Task</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'editorctl/selectpotentialreviewer'; ?>">Select Reviewer</a></li>
                         </ul>
                         </li>
                         <li class="nav-item dropdown <?php if($segment=="topup" || $segment=="commitpayment"){echo "active";}?>">
                         <a class ="nav-link" href="<?= base_url('editorctl/commitpayment') ?>">Payment</a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Balance: <?= number_format(($session_data['balance'] ), 2, ',', '.')?></a></li>
-                            <li><a href="<?php echo base_url() . 'paymentctl/topup'; ?> ">Top-Up</a></li>
-                            <li><a href="<?php echo base_url() . 'editorctl/commitpayment'; ?>">Commit Payment</a></li>
+                            <li><a class="dropdown-item" href="">Balance: <?= number_format(($session_data['balance'] ), 2, ',', '.')?></a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/topup'; ?> ">Top-Up</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'editorctl/commitpayment'; ?>">Commit Payment</a></li>
                         </ul>
                         </li>
                         <li class="nav-item dropdown">
                         <a class ="nav-link" href="#"><?= $session_data['nama'] ?> (<?= ucfirst($session_data['nama_grup']); ?>)</a>
                         <ul class="dropdown-menu">
-                            <li><a href=""><?= ucfirst($session_data['nama_grup'])."(".$session_data['id_on_grup'].") " . "User". "(".$session_data['id_user'].")"; ?></a></li>
-                            <li><a href="<?php echo base_url() . 'accountctl/profile'; ?>">Profile</a></li>
-                            <li><a href="<?php echo base_url() . 'accountctl/logout'; ?> ">Logout</a></li>
+                            <li><a class="dropdown-item" href=""><?= ucfirst($session_data['nama_grup'])."(".$session_data['id_on_grup'].") " . "User". "(".$session_data['id_user'].")"; ?></a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/profile'; ?>">Profile</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/logout'; ?> ">Logout</a></li>
                         </ul>
                         </li>
    

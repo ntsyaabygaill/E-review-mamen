@@ -42,60 +42,34 @@
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="services.html">services</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownpro"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        portfolio
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
-                                        <a class="dropdown-item" href="portfolio.html">portfolio</a>
-                                        <a class="dropdown-item" href="portfolio_details.html">portfolio details</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html"> blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">contact</a>
-                                </li>
+                            <?php $segment = $this->uri->segment(2) ?>
+                        <li class="nav-item" <?php if($segment=="" || $segment=="index"){echo "active";}?>">
+                        <a class ="nav-link" href="<?= base_url(); ?>">Home</a>
+                        </li>
+                        <li class="nav-item dropdown <?php if($segment=="addtask" || $segment=="viewtask" || $segment =="selectpotentialreviewer"){echo "active";}?>">
+                        <a class ="nav-link" href="#">Task</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'reviewerctl/viewassignment'; ?>">View Task</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown <?php if($segment=="topup" || $segment=="commitpayment"){echo "active";}?>">
+                        <a class ="nav-link" href="<?= base_url('editorctl/commitpayment') ?>">Payment</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Balance: <?= number_format(($session_data['balance'] ), 2, ',', '.')?></a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/topup'; ?> ">Top-Up</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'editorctl/commitpayment'; ?>">Commit Payment</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class ="nav-link" href="#"><?= $session_data['nama'] ?> (<?= ucfirst($session_data['nama_grup']); ?>)</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href=""><?= ucfirst($session_data['nama_grup'])."(".$session_data['id_on_grup'].") " . "User". "(".$session_data['id_user'].")"; ?></a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/profile'; ?>">Profile</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/logout'; ?> ">Logout</a></li>
+                        </ul>
+                        </li>
+   
                             </ul>
-                        </div>
-                        <div class="dropdown cart">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>
-                            </a>
-                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="single_product">
-    
-                                    </div>
-                                </div> -->
                         </div>
                     </nav>
                 </div>

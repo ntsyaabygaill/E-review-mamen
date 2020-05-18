@@ -73,9 +73,9 @@ class AccountCtl extends CI_Controller
 
 		$config['upload_path']          = './photos/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 50;
-		$config['max_width']            = 150;
-		$config['max_height']           = 200;
+		$config['max_size']             = 2000;
+		//$config['max_width']            = 150;
+		//$config['max_height']           = 200;
 
 		$new_name = str_replace(' ', '_', time() . '_' . $_FILES["photo"]['name']);
 		$config['file_name'] = $new_name;

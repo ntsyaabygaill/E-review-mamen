@@ -19,7 +19,7 @@ class Account extends CI_Model
                 '" . $this->input->post('no_rek')    . "',
                 '" . $this->upload->data('file_name')    . "'
             )";
-        echo $q;
+      //  echo $q;
         $this->db->query($q);
 
         //return id di managemytask.php di function addingnewtask

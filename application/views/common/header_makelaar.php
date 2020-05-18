@@ -24,11 +24,14 @@
 	<!-- swiper CSS -->
 	<link href="<?php echo base_url('css/slick.css') ?>" rel="stylesheet">
 	<!-- style CSS -->
-	<link href="<?php echo base_url('css/style.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('css/style.css') ?>" rel="stylesheet">
     
 </head>
-<!--::header part start::-->
-<header class="main_menu home_menu">
+
+<header>
+    <!-- Navbar
+    ================================================== -->
+    <header class="main_menu home_menu">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -42,64 +45,41 @@
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="services.html">services</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownpro"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        portfolio
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
-                                        <a class="dropdown-item" href="portfolio.html">portfolio</a>
-                                        <a class="dropdown-item" href="portfolio_details.html">portfolio details</a>
-                                    </div>
-                                </li>
+                            <?php $segment = $this->uri->segment(2) ?>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html"> blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dropdown cart">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flaticon-bag"></i>
-                            </a>
-                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="single_product">
-    
-                                    </div>
-                                </div> -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
+              <ul class="navbar-nav">
+                <li class="nav-item" <?php if ($segment == "" || $segment == "index") {echo "active";} ?>">
+                  <a class = "nav-link"href="<?= base_url(); ?>">Home</a>
+                </li>
+
+                <li class="nav-item dropdown <?php if ($segment == "newtask" || $segment == "ongoingtask" || $segment == "completedtask") {echo "active";} ?>">
+                  <a class ="nav-link" href="#">Task</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/newtask'; ?>">View New Task</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/ongoingtask'; ?>">View On Going Task</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/completedtask'; ?>">View Completed Task</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown <?php if ($segment == "topupconfirmation" || $segment == "paymentconfirmation") {echo "active";} ?>">
+                  <a class="nav-link" href="">Payment</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/topupconfirmation'; ?> ">Topup Confirmation</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/paymentconfirmation'; ?>">Payment Confirmation</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#"><?= $session_data['nama'] ?> (<?= ucfirst($session_data['nama_grup']); ?>)</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href=""><?= ucfirst($session_data['nama_grup']) . "(" . $session_data['id_on_grup'] . ") " . "User" . "(" . $session_data['id_user'] . ")"; ?></a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/profile'; ?>">Profile</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/logout'; ?> ">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end menu -->
         </div>
-    </header>
-    <!-- Header part end-->
+      </div>
+    </div>
+  </header>
