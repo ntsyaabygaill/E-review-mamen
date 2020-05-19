@@ -16,12 +16,6 @@
 </section>
 <section id="maincontent">
   <div class="container">
-    <ul class="nav nav-tabs">
-      <li class=""><a href="<?= base_url('makelaarctl/newtask') ?>">New</a> </li>
-      <li class=""><a href="<?= base_url('makelaarctl/onGoingTask') ?>">On Going</a> </li>
-      <li class="active"><a href="<?= base_url('makelaarctl/awaitingConfirmationTask') ?>">Awaiting Confirmation</a> </li>
-      <li class=""><a href="<?= base_url('makelaarctl/completedTask') ?>">Completed</a> </li>
-    </ul>
     <div class="row">
       <div class="span12">
         <style>
@@ -49,9 +43,9 @@
           <tr>
             <th>No</th>
             <th>Title</th>
-            <th>Author(s)</th>
-            <th>Added by Editor</th>
-            <th>Assigned to Reviewer</th>
+            <th>Keyword</th>
+            <th>Editor</th>
+            <th>Reviewer</th>
             <th>Download</th>
             <th>Action</th>
           </tr>

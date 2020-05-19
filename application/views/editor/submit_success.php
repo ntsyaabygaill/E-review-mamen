@@ -10,8 +10,9 @@
               <div class="tagline_text">
                 <h2>Assign Review Success</h2>
                 <p>
-                  You have sucessfully assign:
+                  You have sucessfully assign your task:
                 </p>
+               
                 <h4>
                   <?= $judul ?>
                 </h4>
@@ -20,7 +21,7 @@
                   <?= join(", ", $reviewers); ?>
                 </h4>
               </div>
-              <p>Go back to <a href="<?= base_url('editorctl/viewtask') ?>">task list</a></p>
+              <p>You can check your task list in here <a href="<?= base_url('editorctl/viewtask') ?>">task list</a></p>
             </div>
           </div>
         </div>

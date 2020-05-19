@@ -6,9 +6,9 @@
                 <div class="col-lg-5">
                     <div class="banner_text text-center">
                         <div class="banner_text_iner">
-                            <h5>Model Photography</h5>
-                            <h1>Creative <span>Studio</span></h1>
-                            <p>Capturing moments from today</p>
+                            <h5>E-REVIEW</h5>
+                            <h1>E-REVIEW<span> FOR YOU!</span></h1>
+                            <p>Best Choice For Your Work!</p>
                             <a href="#" class="btn_1">view work</a>
                         </div>
                     </div>
@@ -133,58 +133,40 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_pricing_part">
                         <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_1.svg" alt="">
+                            <img src="img/icon/editor.png" alt="">
                             <p>Editor</p>
                         </div>
                         <div class="pricing_content">
                              <h3>FITUR <span></span></h3>
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
+                             <!--   <li>2GB Bandwidth</li> -->
+                                <li>Can Add Task to Be Reviewed</li>
+                                <li>Can Download the Review's File</li>
+                                <li>Can Pay via online</li>
+                                <li>Can Choose Your Own Reviewer</li>
+                          <!--      <li>24/7 Support</li> -->
                             </ul>
                             <a href="<?php echo base_url() . "AccountCtl/signUp"; ?>" class="btn_2">Sign-Up Now</a>
                         </div>
                     </div>
                 </div>
-         <!--       <div class="col-lg-4 col-sm-6">
-                    <div class="single_pricing_part">
-                        <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_2.svg" alt="">
-                            <p>Makelaar</p>
-                        </div>
-                        <div class="pricing_content">
-                            <h3>FITUR <span></span></h3>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="<?php echo base_url() . "AccountCtl/signUp"; ?>" class="btn_2">Sign-Up Now</a>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_pricing_part">
                         <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_3.svg" alt="">
+                            <img src="img/icon/reviewer.png" alt="">
                             <p>Reviewer</p>
                         </div>
                         <div class="pricing_content">
                             <h3>FITUR <span></span></h3>
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
+                            <!--    <li>2GB Bandwidth</li> -->
+                                      <br>
+                                     
+                                <li>Can Choose Your Favourite Task to Be Reviewed </li>
+                                <li>Can Get Your Payment via Online</li>
+                          <!--      <li>3 Host Domain</li>
+                                <li>24/7 Support</li>  -->
+                                      <br>
                             </ul>
                             <a href="<?php echo base_url() . "AccountCtl/signUp"; ?>" class="btn_2">Sign-Up Now</a>
                         </div>

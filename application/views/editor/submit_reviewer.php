@@ -6,7 +6,7 @@
           <div class="centered">
             <h3>Select Potential Reviewer</h3>
             <p>
-              Select reviewer(s) for corresponding task
+              Select Your Potential Reviewer For Your Task
             </p>
           </div>
         </div>
@@ -24,8 +24,7 @@
               <div class="tagline_text">
                 <div align="center">
                   <form action="submittingReviewer" method="post">
-                    <h3>You have selected the article and reviewers</h3>
-                    <p>go <a href="<?= base_url('editorctl/selectpotentialreviewer') ?>">back</a> if you made a mistake</p>
+                    <h3>You have selected the reviewers for your task</h3>
 
                     <?php if ($msg != '') : ?>
                       <div class="alert alert-danger" role="alert">
@@ -48,30 +47,30 @@
                     </style>
                     <table>
                       <tr>
-                        <td>Article</td>
+                        <td>ARTICLE</td>
                         <td>:</td>
                         <td>
                           <input name="article" type="hidden" value="<?= $article[0]['id_task'] ?>" readonly>
-                          <input name="" type="text" value="<?= $article[0]['judul'] ?>" readonly>
+                          <input class="single-input-primary" name="" type="text" value="<?= $article[0]['judul'] ?>" readonly>
+                          
                         </td>
                       </tr>
 
                       <tr>
-                        <td>Reviewer(s)</td>
+                        <td>REVIEWER</td>
                         <td>:</td>
                         <td>
-                          <!-- input hidden biar passing ke post nya gampang -->
-                          <!-- $index itu index dari tiap elemen $reviewers -->
+                          
                           <?php foreach ($reviewers as $index=>$item) { ?>
                             <input type="hidden" name="reviewers[]" value="<?= $index ?>">
                           <?php } ?>
-                          <input name="" type="text" value="<?= join(", ", $reviewers); ?>" readonly>
+                          <input class="single-input-primary" name="" type="text" value="<?= join(", ", $reviewers); ?>" readonly>
                         </td>
                       </tr>
 
                       <tr>
                         <td colspan="3" class="centered">
-                          <input style="margin-top: 20px" type="submit" class="btn btn-success" value="Submit">
+                          <input style="margin-top: 20px" type="submit" class="genric-btn primary-border circle" value="Submit">
                         </td>
                       </tr>
                     </table>

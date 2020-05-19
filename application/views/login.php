@@ -10,7 +10,7 @@
                 <div class="tagline_text">
                   <h2>Please Login</h2>
                   <p>
-                    You should login to the system before you can submit or review any article.
+                    You should login to the system before you can acsess our fitur.
                   </p>
                   <!-- Alert Form Validation -->
                   <?php if ($msg != '') : ?>
@@ -48,7 +48,7 @@
                         </tr>
                       </table><br>
 
-                      <input type="submit"class="genric-btn info circle arrow" value="Login">
+                      <input type="submit"class="genric-btn primary-border circle" value="Login">
                     </form>
                    <!-- <p><a href="<?php echo base_url() . "AccountCtl/signUp" ?>">Sign-up</a> to eReview</p> -->
                   </div>

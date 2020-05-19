@@ -5,8 +5,7 @@
                 <div class="col-lg-8">
                     <div class="single_project_item">
                     <!--    <img src="img/gallery/gallery_item_888" alt=""> -->
-                        <h2>Great Yielding were beginning isn't two kind dominion
-                            beginning brought tree years tree hath</h2>
+                        <h2>MAGAZINE " LINUX MAGAZINE "</h2>
                         <div class="project_time">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-4">
@@ -15,7 +14,7 @@
                                             <img src="img/icon/project_details_icon_1.svg" class="mr-4" alt="#">
                                             <div class="media-body">
                                                 <h5 class="mt-0">Start Time</h5>
-                                                <span>07:00 AM</span>
+                                                <span>07:00 PM</span>
                                                 <p>Friday, Jan 10, 2020</p>
                                             </div>
                                         </div>
@@ -27,7 +26,7 @@
                                             <img src="img/icon/project_details_icon_22.svg" class="mr-4" alt="#">
                                             <div class="media-body">
                                                 <h5 class="mt-0">Finish Time</h5>
-                                                <span>08:00 AM</span>
+                                                <span>08:00 PM</span>
                                                 <p>Saturday, Jan 11, 2020</p>
                                             </div>
                                         </div>
@@ -39,7 +38,7 @@
                                             <img src="img/icon/project_details_icon_3.svg" class="mr-4" alt="#">
                                             <div class="media-body">
                                                 <h5 class="mt-0">Address</h5>
-                                                <span>Medan, Sumatera Utara</span>
+                                                <span>Manado, Sulawesi Utara</span>
                                             </div>
                                         </div>
                                     </div>

@@ -27,43 +27,58 @@
                         <td>*Nama: </td>
 						<td><input type="text" id="nama" placeholder = "Name" name="nama" width="100" 
 						onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required
-									class="single-input">
+									class="single-input-primary">
 					  </td>
                       </tr>
                       <tr>
                         <td>*Username: </td>
 						<td><input type="text" id="username" placeholder = "Username" name="username" width="100" 
 						onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" required
-									class="single-input">
+									class="single-input-primary">
 					</td>
                       </tr>
                       <tr>
                         <td>*Password: </td>
 						<td><input type="password" id="sandi"placeholder = "Password" name="sandi" width="100"
 						onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required
-									class="single-input">
+									class="single-input-primary">
 					  </td>
                       </tr>
                       <tr>
                         <td>*Email: </td>
 						<td><input type="text" id="email"placeholder = "E-mail" name="email" width="100" 
 						onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" required
-									class="single-input">
+									class="single-input-primary">
 					  </td>
                       </tr>
                       <tr>
                         <td>*Roles: </td>
                         <td>
-                          <input type="radio" name="roles[]" value="1" width="100" checked id="primary-radio"/>Editor
-                          <br>
-                          <input type="radio" name="roles[]" value="2" width="100" id="primary-radio" />Reviewer
+                    <!--      <input type="radio"  checked id="primary-radio"/>Editor -->
+                          <div class="switch-wrap d-flex justify-content-between"> 
+								<p>Editor</p>
+								<div class="confirm-checkbox">
+									<input type="checkbox" name="roles[]" value="1" width="100" id="primary-checkbox" checked>
+									<label for="confirm-checkbox"></label>
+                </div> 
+              </div>
+                         
+                        <!--  <input type="radio" n id="primary-radio" />Reviewer -->
+                          <div class="switch-wrap d-flex justify-content-between">
+								<p>Reviewer</p>
+								<div class="confirm-checkbox">
+									<input type="checkbox" name="roles[]" value="2" width="100" id="confirm-checkbox">
+									<label for="confirm-checkbox"></label>
+								</div>
+							</div>
                         </td>
                       </tr>
                       <tr>
                         <td>*Account Number: </td>
 						<td><input type="text" id="no_rek" placeholder = "No Rekening" name="no_rek" width="100" 
 						onfocus="this.placeholder = ''" onblur="this.placeholder = 'No Rekening'" required
-									class="single-input">
+                  class="single-input-primary">
+                  <br>
 					</td>
                       </tr>
                       <tr>
@@ -72,7 +87,7 @@
                       </tr>
                     </table><br>
 
-                    <input type="submit" class="genric-btn info circle arrow" value="Sign-up">
+                    <input type="submit" class="genric-btn primary-border circle" value="Sign-up">
 					<?= form_close(); ?>
 					<br>
                    <!-- <p><a href="<?php echo base_url() . "AccountCtl/login" ?>">Login</a> to eReview</p> -->

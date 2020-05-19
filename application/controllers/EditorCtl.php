@@ -28,10 +28,6 @@ class EditorCtl extends CI_Controller
 
 	public function viewTask()
 	{
-		// sts_task value:
-		// 0 = inactive (finished)
-		// 1 = unassigned
-		// 2 = assigned
 
 		$this->load->model('Task');
 		$session_data = $this->session->userdata('logged_in');

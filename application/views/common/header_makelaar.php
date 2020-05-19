@@ -55,22 +55,21 @@
                 <li class="nav-item dropdown <?php if ($segment == "newtask" || $segment == "ongoingtask" || $segment == "completedtask") {echo "active";} ?>">
                   <a class ="nav-link" href="#">Task</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/newtask'; ?>">View New Task</a></li>
-                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/ongoingtask'; ?>">View On Going Task</a></li>
-                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/completedtask'; ?>">View Completed Task</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/ongoingtask'; ?>">All Task</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/awaitingConfirmationTask'; ?>">Task Confirmation</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'index.php/makelaarctl/completedTask'; ?>">Complete</a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown <?php if ($segment == "topupconfirmation" || $segment == "paymentconfirmation") {echo "active";} ?>">
+    <!--       <li class="nav-item dropdown <?php if ($segment == "topupconfirmation" || $segment == "paymentconfirmation") {echo "active";} ?>">
                   <a class="nav-link" href="">Payment</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/topupconfirmation'; ?> ">Topup Confirmation</a></li>
-                    <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/paymentconfirmation'; ?>">Payment Confirmation</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url() . 'paymentctl/paymentconfirmation'; ?>">Payment Confirmation</a></li> -->
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#"><?= $session_data['nama'] ?> (<?= ucfirst($session_data['nama_grup']); ?>)</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href=""><?= ucfirst($session_data['nama_grup']) . "(" . $session_data['id_on_grup'] . ") " . "User" . "(" . $session_data['id_user'] . ")"; ?></a></li>
                     <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/profile'; ?>">Profile</a></li>
                     <li><a class="dropdown-item" href="<?php echo base_url() . 'accountctl/logout'; ?> ">Logout</a></li>
                   </ul>

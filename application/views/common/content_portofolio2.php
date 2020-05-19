@@ -5,8 +5,7 @@
                 <div class="col-lg-8">
                     <div class="single_project_item">
                     <!--    <img src="img/gallery/gallery_item_888" alt=""> -->
-                        <h2>Great Yielding were beginning isn't two kind dominion
-                            beginning brought tree years tree hath</h2>
+                        <h2 > JURNAL HUKUM " IUS QUIA IUSTUM "</h2>
                         <div class="project_time">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-4">

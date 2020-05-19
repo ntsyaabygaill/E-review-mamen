@@ -145,6 +145,10 @@ class MakelaarCtl extends CI_Controller
 		// return;
 		$task = $this->Task->updateThisAssignment($id_assignment, 2);
 
+		$this->load->view('common/header_makelaar', array("session_data" => $session_data));
+		$this->load->view('makelaar/view_completed_task', array('tasks' => $tasks));
+		$this->load->view('common/footer');
+
 		return;
 	}
 }
